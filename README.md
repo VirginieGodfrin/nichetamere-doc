@@ -8,7 +8,7 @@ Bienvenue dans la documentation utilisateur.
 [Commerce - Webform - Webform booking](commerce_webform_introduction.md)
 
 ## Ajout de produit dans le formulaire de réservation
-Voir → [Gestion des produits pour la réservation](gestion_des_produits_pour_la_reservation.md)
+[Gestion des produits pour la réservation](gestion_des_produits_pour_la_reservation.md)
 
 
 
