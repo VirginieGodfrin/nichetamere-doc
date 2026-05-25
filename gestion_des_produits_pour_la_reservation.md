@@ -1,86 +1,6 @@
 Nichetamere.be
 
-# Documentation Commerce et Webform:-: Ajout de produit dans le formulaire de réservation.
-
-## Introduction,  Fonctionnement général
-
-### Objectif du site:
-
-Le site permet de gérer :
-
-la réservation de services Dogwash
-
-la vente de produits
-
-la création automatique de commandes
-
-L’objectif est de proposer une expérience simple pour le client final, tout en facilitant la gestion pour l’administrateur.
-
-#### Les 3 composants principaux
-
-Le fonctionnement du site repose sur trois modules principaux :
-
-- Commerce
-
-- Webform
-
-- Webform Booking
-
-#### Commerce — Produits et commandes
-
-Le module Commerce permet de gérer :
-
-- les produits (ex : packs, articles)
-
-- les prix
-
-- les commandes
-
-Chaque produit est structuré pour pouvoir être utilisé dans le formulaire de réservation.
-
-#### Webform — Formulaire de réservation
-
-Le module Webform permet de créer un formulaire utilisé par les clients pour :
-
-- sélectionner un créneau
-
-- choisir un service ou un pack
-
-- ajouter des produits
-
-Ce formulaire est le point d’entrée principal pour l’utilisateur.
-
-#### Webform Booking — Gestion des créneaux
-
-Le module Webform Booking permet de :
-
-- proposer des créneaux disponibles
-
-- éviter les réservations en double
-
-- organiser le planning
-
-#### Fonctionnement global
-
-Lorsqu’un client utilise le site :
-
-1. Le client remplit le formulaire
-
-2. Il choisit un créneau
-
-3. Il sélectionne un pack et des produits
-
-4. Une commande est automatiquement créée
-
-#### Principe important à retenir
-
-- Commerce stocke les produits
-
-- Webform les affiche
-
-- Le client les sélectionne
-
-- Une commande est générée automatiquement
+# Documentation Commerce et Webform: Ajout de produit dans le formulaire de réservation.
 
 ## Gestion des produits (Commerce)
 
@@ -122,7 +42,7 @@ Chaque type permet de définir :
 
 À retenir:
 
-**Un type de produit définit la structure du produit (ce que l’on peut remplir)**
+**Un type de produit définit la structure du produit : description, photo **
 
 ##### 2. Variations de produits
 
@@ -183,14 +103,11 @@ Le nouveau produit: [Butchcare - Baume Patte](https://nichetamere.be/fr/product/
 Le formulaire de la création de produit dépend de sa configuration : 
 Admin > Commerce > Configuration > [Types de produit](https://nichetamere.be/fr/admin/commerce/config/product-types) > Butchcare - Baume Pattes > [Modifier](https://nichetamere.be/fr/admin/commerce/config/product-types/butchcare_baume_pattes/edit?destination=/fr/admin/commerce/config/product-types)
 
-Après la création du produit, je lui défini des variations via Commerce > produit > Butchcare - Baume Patte > Modifier > Variations.
-Je définie un titre , c'est ce titre que l'on retrouvera par la suite dans le formulaire de reservation, la référence (Identifiant du stock ou SKU), 
+Après la création du produit, je lui défini des variations via Commerce > produit > Butchcare - Baume Patte > Modifier > [Variations](https://nichetamere.be/fr/product/4/variations).
+Je définie un titre , c'est ce titre que l'on retrouvera par la suite dans le formulaire de réservation, la référence (Identifiant du stock ou SKU), 
 le prix, et la devise. Pour l'instant, il n'y a q'une seule variation main on pourra en ajouter d'autres par la suite. 
 
-Ce formulaire de création de variation dépend de sa configuration : 
+Ce formulaire de création de variations dépend de sa configuration : 
 Admin >Commerce > Configuration > [type de variation de produit](https://nichetamere.be/fr/admin/commerce/config/product-variation-types) > Butchcare - Baume Pattes > [Modifier](https://nichetamere.be/fr/admin/commerce/config/product-variation-types/butchcare_baume_pattes/edit?destination=/fr/admin/commerce/config/product-variation-types) 
 
-
-
-
-
+## Intégration des produits dans le formulaire de réservation
