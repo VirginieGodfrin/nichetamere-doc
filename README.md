@@ -5,6 +5,6 @@
 Bienvenue dans la documentation utilisateur.
 
 ## 🛍️ Ajout de produit dans le formulaire de réservation
-Voir → produits.md
+Voir → gestion_des_produits_pour_la_reservation.md
 
 
